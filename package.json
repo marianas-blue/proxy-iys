@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/amazonians-110/andrew-component-proxy#readme",
   "dependencies": {
+    "compression": "^1.7.3",
     "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
