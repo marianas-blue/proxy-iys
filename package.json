@@ -1,7 +1,7 @@
 {
-  "name": "andrew-component-proxy",
+  "name": "product-gallery-proxy",
   "version": "1.0.0",
-  "description": "A proxy server for the product-gallery-summary repo.",
+  "description": "A proxy server for the product-gallery repo",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amazonians-110/andrew-component-proxy.git"
+    "url": "git+https://github.com/marianas-blue/proxy-iys.git"
   },
-  "author": "Andrew Mitchell",
+  "author": "Irene Shao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amazonians-110/andrew-component-proxy/issues"
+    "url": "https://github.com/marianas-blue/proxy-iys/issues"
   },
-  "homepage": "https://github.com/amazonians-110/andrew-component-proxy#readme",
+  "homepage": "https://github.com/marianas-blue/proxy-iys/blob/master/README.md",
   "dependencies": {
     "compression": "^1.7.3",
     "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "i": "^0.3.6",
+    "morgan": "^1.9.1",
     "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^0.19.1"
   }
 }
