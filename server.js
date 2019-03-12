@@ -10,7 +10,7 @@ const proxy = require('http-proxy-middleware');
 const app = express();
 
 // app.use(morgan('dev'));
-app.use('/api', proxy({ target: 'http://localhost:3000', changeOrigin: true }));
+app.use('/api', proxy({ target: 'http://ec2-18-222-221-247.us-east-2.compute.amazonaws.com', changeOrigin: true }));
 
 app.use(cors());
 
