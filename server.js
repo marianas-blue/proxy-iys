@@ -1,10 +1,16 @@
+require('newrelic');
 const express = require('express');
 const cors = require('cors');
 const compression = require('compression');
 const path = require('path');
-const favicon = require('serve-favicon')
+const favicon = require('serve-favicon');
+const proxy = require('http-proxy-middleware');
+// const morgan = require('morgan');
 
 const app = express();
+
+// app.use(morgan('dev'));
+app.use('/api', proxy({ target: 'http://ec2-18-222-221-247.us-east-2.compute.amazonaws.com', changeOrigin: true }));
 
 app.use(cors());
 
@@ -22,4 +28,4 @@ app.get('*', (req, res) => {
   res.redirect('/products/1');
 })
 
-app.listen(80);
+app.listen(8080);
